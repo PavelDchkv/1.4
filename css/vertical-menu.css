@@ -1,0 +1,252 @@
+/*Обнуление стилей.*/
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+/* Моя цсс */
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+    url('../fonts/TTLakes-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Bold'), local('TTLakes-Bold'),
+    url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+    url('../fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.button:hover {
+    filter: opacity(0.7);
+    transition-duration: 0.3s;
+
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 320px;
+    min-height: 100%;
+    box-shadow:
+            -2px 0px 4px rgba(69, 79, 126, 0.02),
+            16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    font-family: "TT Lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+}
+
+.vertical-menu__header {
+    display: flex;
+    flex: 0 0 auto;
+    height: 120px;
+    width: 100%;
+    padding: 23px 24px 50px 24px;
+}
+
+.vertical-menu__logo {
+    margin-top: -4px;
+    width: 96.5px;
+    height: 51px;
+}
+
+.vertical-menu__button {
+    margin-right: 16px;
+}
+
+.vertical-menu__button--right-side {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.vertical-menu__nav {
+    width: 100%;
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.nav__list {
+    width: 100%;
+}
+
+.nav__item {
+    padding: 4px 0 4px 24px;
+    margin-bottom: 24px;
+
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+}
+
+/*.nav__item:hover:not(.nav__item--current) {*/
+/*    color: #FF3E79;*/
+/*}*/
+
+/*.nav__item--current {*/
+/*    color: rgba(126, 126, 130, 0.9);*/
+/*    position: relative;*/
+/*}*/
+
+.nav__link:focus {
+    color: rgba(126, 126, 130, 0.9);
+    position: relative;
+}
+
+.nav__link:focus::before {
+    position: absolute;
+    left: -24px;
+    top: -4px;
+    content: "";
+    width: 4px;
+    height: 32px;
+    background-color: #41F6D7;
+}
+
+.vertical-menu__footer {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex: 0 0 auto;
+    width: 100%;
+    height: 220px;
+}
+
+.vertical-menu__button-section {
+    display: flex;
+    padding-left: 24px;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.contact-info__phone {
+    display: block;
+    margin-top: 12px;
+    margin-left: 24px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.contact-info__mail {
+    display: block;
+    margin-left: 24px;
+    margin-top: 16px;
+}
+
+.contact-info__radio-form {
+    padding-top: 40px;
+    padding-left: 24px;
+}
+
+.contact-info__radio {
+    margin-right: 7px;
+}
+
+input:checked + .contact-info__radio-span {
+    color: #7E7E82;
+}
+
+.contact-info__radio-span {
+    cursor: pointer;
+}
+
+.contact-info__radio-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

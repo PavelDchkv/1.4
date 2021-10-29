@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vertical-menu</title>
+    <link href="css/vertical-menu.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="vertical-menu">
+        <header class="vertical-menu__header">
+            <button type="button" class="vertical-menu__button button">
+                <img src="img/close-menu.svg" alt="close-menu">
+            </button>
+            <img class="vertical-menu__logo" src="img/Group.svg" alt="logo">
+            <button type="button" class="vertical-menu__button vertical-menu__button--right-side button">
+                <img src="img/search.svg" alt="check status">
+            </button>
+        </header>
+        <nav class="vertical-menu__nav nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#" autofocus>Ремонтируемые устройства</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Ремонтируемые бренды</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Цены на услуги</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Адреса сервисных центров</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Специальные цены</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <footer class="vertical-menu__footer">
+            <div class="vertical-menu__button-section">
+                <button type="button" class="vertical-menu__button button">
+                    <img src="img/call.svg" alt="menu">
+                </button>
+                <button type="button" class="vertical-menu__button button">
+                    <img src="img/chat.svg" alt="menu">
+                </button>
+                <button type="button" class="vertical-menu__button button">
+                    <img src="img/profile.svg" alt="menu">
+                </button>
+            </div>
+            <section class="vertical-menu__contact-info contact-info">
+                <a class="contact-info__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+                <a class="contact-info__phone" href="tel: 88008908900">8 800 890 8900</a>
+                <div class="contact-info__radio-form">
+                    <label class="contact-info__radio">
+                        <input class="contact-info__radio-input" type="radio" value="RU" name="lang" checked>
+                        <span class="contact-info__radio-span">RU</span>
+                    </label>
+                    <label class="contact-info__radio">
+                        <input class="contact-info__radio-input" type="radio" value="EN" name="lang">
+                        <span class="contact-info__radio-span">EN</span>
+                    </label>
+                    <label class="contact-info__radio">
+                        <input class="contact-info__radio-input" type="radio" value="CH" name="lang">
+                        <span class="contact-info__radio-span">CH</span>
+                    </label>
+                </div>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
+
